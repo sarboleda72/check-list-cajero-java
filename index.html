@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checklist de Proyecto de Cajero Automático</title>
+
+</head>
+<body>
+
+    <h1>Checklist del Proyecto de Cajero Automático</h1>
+
+    <form id="checklistForm">
+        <fieldset>
+            <legend>1. Creación de Usuarios y Cuentas</legend>
+            <label><input type="checkbox" name="requisito"> El sistema permite crear usuarios con nombre, identificación y cuenta bancaria asociada.</label>
+            <label><input type="checkbox" name="requisito"> Cada cuenta bancaria tiene un número de cuenta único y saldo inicial.</label>
+            <label><input type="checkbox" name="requisito"> Las cuentas están asociadas a los usuarios de forma correcta.</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>2. Operaciones del Cajero</legend>
+            <label><input type="checkbox" name="requisito"> El usuario puede iniciar sesión con una tarjeta de débito ingresando su número de tarjeta y PIN.</label>
+            <label><input type="checkbox" name="requisito"> El sistema valida correctamente el PIN antes de permitir el acceso al cajero.</label>
+            <label><input type="checkbox" name="requisito"> El usuario puede consultar su saldo actual.</label>
+            <label><input type="checkbox" name="requisito"> El usuario puede realizar depósitos en su cuenta.</label>
+            <label><input type="checkbox" name="requisito"> El usuario puede realizar retiros de su cuenta, y el sistema valida que haya suficiente saldo antes de permitir la operación.</label>
+            <label><input type="checkbox" name="requisito"> El usuario puede realizar transferencias de dinero a otra cuenta bancaria.</label>
+            <label><input type="checkbox" name="requisito"> El sistema refleja correctamente las transferencias recibidas en la cuenta del usuario destino.</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>3. Historial de Transacciones</legend>
+            <label><input type="checkbox" name="requisito"> El usuario puede visualizar un historial de transacciones, incluyendo depósitos, retiros y transferencias realizadas y recibidas.</label>
+            <label><input type="checkbox" name="requisito"> El historial muestra la cantidad y una breve descripción de cada transacción.</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>4. Cierre de Sesión</legend>
+            <label><input type="checkbox" name="requisito"> El sistema permite cerrar sesión para que otro usuario pueda iniciar sesión con su tarjeta.</label>
+            <label><input type="checkbox" name="requisito"> Después de cerrar sesión, los datos del usuario anterior no están disponibles hasta que vuelva a iniciar sesión.</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>5. Seguridad</legend>
+            <label><input type="checkbox" name="requisito"> El PIN de la tarjeta es validado correctamente en cada intento de inicio de sesión.</label>
+            <label><input type="checkbox" name="requisito"> Las transacciones solo se pueden realizar si el usuario está autenticado correctamente.</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>6. Interacción con Múltiples Usuarios</legend>
+            <label><input type="checkbox" name="requisito"> El sistema permite gestionar múltiples usuarios con sus respectivas cuentas y tarjetas.</label>
+            <label><input type="checkbox" name="requisito"> Las transferencias entre cuentas de distintos usuarios son reflejadas correctamente.</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>7. Manejo de Errores</legend>
+            <label><input type="checkbox" name="requisito"> El sistema muestra un mensaje de error si el PIN ingresado es incorrecto.</label>
+            <label><input type="checkbox" name="requisito"> El sistema muestra un mensaje de error si la cuenta destino de una transferencia no existe.</label>
+            <label><input type="checkbox" name="requisito"> El sistema muestra un mensaje de error si el saldo es insuficiente para realizar un retiro o transferencia.</label>
+            <label><input type="checkbox" name="requisito"> El sistema valida que la cantidad ingresada para depósitos, retiros o transferencias sea positiva.</label>
+        </fieldset>
+
+        <button type="button" onclick="calcularNota()">Comprobar</button>
+        
+        <div id="resultado"></div>
+    </form>
+</body>
+</html>
