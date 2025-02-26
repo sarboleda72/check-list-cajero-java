@@ -8,57 +8,55 @@
 </head>
 <body>
 
-    <h1>Checklist del Proyecto de Cajero Automático</h1>
+    <h1>Checklist del Proyecto</h1>
 
     <form id="checklistForm">
         <fieldset>
-            <legend>1. Creación de Usuarios y Cuentas</legend>
-            <label><input type="checkbox" name="requisito"> El sistema permite crear usuarios con nombre, identificación y cuenta bancaria asociada.</label>
-            <label><input type="checkbox" name="requisito"> Cada cuenta bancaria tiene un número de cuenta único y saldo inicial.</label>
-            <label><input type="checkbox" name="requisito"> Las cuentas están asociadas a los usuarios de forma correcta.</label>
+            <legend>1. Gestión de Usuarios</legend>
+            <label><input type="checkbox" name="requisito"> El sistema permite crear usuarios con la información relevante.</label>
+            <label><input type="checkbox" name="requisito"> Cada usuario tiene acceso a su propio entorno de trabajo o configuración.</label>
+            <label><input type="checkbox" name="requisito"> Se puede iniciar y cerrar sesión correctamente.</label>
         </fieldset>
 
         <fieldset>
-            <legend>2. Operaciones del Cajero</legend>
-            <label><input type="checkbox" name="requisito"> El usuario puede iniciar sesión con una tarjeta de débito ingresando su número de tarjeta y PIN.</label>
-            <label><input type="checkbox" name="requisito"> El sistema valida correctamente el PIN antes de permitir el acceso al cajero.</label>
-            <label><input type="checkbox" name="requisito"> El usuario puede consultar su saldo actual.</label>
-            <label><input type="checkbox" name="requisito"> El usuario puede realizar depósitos en su cuenta.</label>
-            <label><input type="checkbox" name="requisito"> El usuario puede realizar retiros de su cuenta, y el sistema valida que haya suficiente saldo antes de permitir la operación.</label>
-            <label><input type="checkbox" name="requisito"> El usuario puede realizar transferencias de dinero a otra cuenta bancaria.</label>
-            <label><input type="checkbox" name="requisito"> El sistema refleja correctamente las transferencias recibidas en la cuenta del usuario destino.</label>
+            <legend>2. Funcionalidades Principales</legend>
+            <label><input type="checkbox" name="requisito"> Se implementan las funciones clave del proyecto según sus objetivos.</label>
+            <label><input type="checkbox" name="requisito"> Las acciones principales funcionan correctamente.</label>
+            <label><input type="checkbox" name="requisito"> El sistema maneja adecuadamente los diferentes estados.</label>
         </fieldset>
 
         <fieldset>
-            <legend>3. Historial de Transacciones</legend>
-            <label><input type="checkbox" name="requisito"> El usuario puede visualizar un historial de transacciones, incluyendo depósitos, retiros y transferencias realizadas y recibidas.</label>
-            <label><input type="checkbox" name="requisito"> El historial muestra la cantidad y una breve descripción de cada transacción.</label>
+            <legend>3. Gestión de Datos</legend>
+            <label><input type="checkbox" name="requisito"> Se pueden almacenar y recuperar datos de manera correcta.</label>
+            <label><input type="checkbox" name="requisito"> Se implementa validación para evitar datos incorrectos o incompletos.</label>
+            <label><input type="checkbox" name="requisito"> Las transacciones o cambios en datos se reflejan correctamente.</label>
         </fieldset>
 
         <fieldset>
-            <legend>4. Cierre de Sesión</legend>
-            <label><input type="checkbox" name="requisito"> El sistema permite cerrar sesión para que otro usuario pueda iniciar sesión con su tarjeta.</label>
-            <label><input type="checkbox" name="requisito"> Después de cerrar sesión, los datos del usuario anterior no están disponibles hasta que vuelva a iniciar sesión.</label>
+            <legend>4. Interacción con el Usuario</legend>
+            <label><input type="checkbox" name="requisito"> La interfaz permite una interacción clara y fluida.</label>
+            <label><input type="checkbox" name="requisito"> Se han implementado mensajes de confirmación o error según sea necesario.</label>
+            <label><input type="checkbox" name="requisito"> Se manejan correctamente los distintos roles o permisos.</label>
         </fieldset>
 
         <fieldset>
-            <legend>5. Seguridad</legend>
-            <label><input type="checkbox" name="requisito"> El PIN de la tarjeta es validado correctamente en cada intento de inicio de sesión.</label>
-            <label><input type="checkbox" name="requisito"> Las transacciones solo se pueden realizar si el usuario está autenticado correctamente.</label>
+            <legend>5. Historial y Registro</legend>
+            <label><input type="checkbox" name="requisito"> Se mantiene un historial o registro de las acciones importantes.</label>
+            <label><input type="checkbox" name="requisito"> El usuario puede consultar información sobre eventos pasados.</label>
         </fieldset>
 
         <fieldset>
-            <legend>6. Interacción con Múltiples Usuarios</legend>
-            <label><input type="checkbox" name="requisito"> El sistema permite gestionar múltiples usuarios con sus respectivas cuentas y tarjetas.</label>
-            <label><input type="checkbox" name="requisito"> Las transferencias entre cuentas de distintos usuarios son reflejadas correctamente.</label>
+            <legend>6. Seguridad y Manejo de Errores</legend>
+            <label><input type="checkbox" name="requisito"> Se validan correctamente las credenciales al iniciar sesión.</label>
+            <label><input type="checkbox" name="requisito"> Se han considerado medidas de seguridad básicas para el manejo de datos.</label>
+            <label><input type="checkbox" name="requisito"> Se muestran mensajes adecuados cuando ocurre un error.</label>
         </fieldset>
 
         <fieldset>
-            <legend>7. Manejo de Errores</legend>
-            <label><input type="checkbox" name="requisito"> El sistema muestra un mensaje de error si el PIN ingresado es incorrecto.</label>
-            <label><input type="checkbox" name="requisito"> El sistema muestra un mensaje de error si la cuenta destino de una transferencia no existe.</label>
-            <label><input type="checkbox" name="requisito"> El sistema muestra un mensaje de error si el saldo es insuficiente para realizar un retiro o transferencia.</label>
-            <label><input type="checkbox" name="requisito"> El sistema valida que la cantidad ingresada para depósitos, retiros o transferencias sea positiva.</label>
+            <legend>7. Pruebas y Validación</legend>
+            <label><input type="checkbox" name="requisito"> Se han realizado pruebas funcionales para verificar el correcto desempeño.</label>
+            <label><input type="checkbox" name="requisito"> Se han corregido errores detectados durante las pruebas.</label>
+            <label><input type="checkbox" name="requisito"> Se ha recibido feedback y se han aplicado mejoras basadas en ello.</label>
         </fieldset>
 
         <button type="button" onclick="calcularNota()">Comprobar</button>
