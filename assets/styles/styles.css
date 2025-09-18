@@ -50,6 +50,19 @@ button:hover {
     text-align: center;
     font-size: 18px;
     font-weight: bold;
+    background: #eaf6ea;
+    border-radius: 8px;
+    border: 1px solid #b2dfb2;
+}
+
+#resultado hr {
+    margin: 15px 0;
+    border: none;
+    border-top: 1px solid #b2dfb2;
+}
+
+#resultado b {
+    color: #333;
 }
 .completo {
     color: green;

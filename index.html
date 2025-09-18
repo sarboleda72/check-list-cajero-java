@@ -1,68 +1,74 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checklist de Proyecto de Cajero Automático</title>
+    <title>Criterios de evaluación</title>
     <link rel="stylesheet" href="assets/styles/styles.css">
 </head>
+
 <body>
 
-    <h1>Checklist del Proyecto</h1>
+    <h1>Criterios de evaluación del Proyecto</h1>
 
     <form id="checklistForm">
+        <!-- Checklist original restaurado -->
         <fieldset>
             <legend>1. Gestión de Usuarios</legend>
-            <label><input type="checkbox" name="requisito"> El sistema permite crear usuarios con la información relevante.</label>
-            <label><input type="checkbox" name="requisito"> Cada usuario tiene acceso a su propio entorno de trabajo o configuración.</label>
-            <label><input type="checkbox" name="requisito"> Se puede iniciar y cerrar sesión correctamente.</label>
+            <label><input type="checkbox" name="usuarios" value="crear" checked> Permite crear usuarios.</label>
+            <label><input type="checkbox" name="usuarios" value="actualizar" checked> Permite actualizar usuarios.</label>
+            <label><input type="checkbox" name="usuarios" value="listar" checked> Permite listar usuarios.</label>
+            <label><input type="checkbox" name="usuarios" value="buscar" checked> Permite buscar usuarios.</label>
+            <label><input type="checkbox" name="usuarios" value="eliminar" checked> Permite eliminar usuarios.</label>
+            <label><input type="checkbox" name="usuarios" value="roles" checked> Implementa al menos dos roles de usuario.</label>
+            <label><input type="checkbox" name="usuarios" value="login" checked> Permite iniciar y cerrar sesión correctamente.</label>
         </fieldset>
 
         <fieldset>
-            <legend>2. Funcionalidades Principales</legend>
-            <label><input type="checkbox" name="requisito"> Se implementan las funciones clave del proyecto según sus objetivos.</label>
-            <label><input type="checkbox" name="requisito"> Las acciones principales funcionan correctamente.</label>
-            <label><input type="checkbox" name="requisito"> El sistema maneja adecuadamente los diferentes estados.</label>
+            <legend>2. Gestión de la Segunda Entidad (Ejemplo: Videojuego)</legend>
+            <p style="font-size: 0.95em; color: #555; margin-bottom: 8px;">Esta entidad es la que se usará para la
+                transacción (por ejemplo, videojuegos que se compran/venden). Debe implementarse el CRUD completo.</p>
+            <label><input type="checkbox" name="videojuego" value="crear" checked> Permite crear la segunda entidad (ejemplo: videojuego).</label>
+            <label><input type="checkbox" name="videojuego" value="actualizar" checked> Permite actualizar la segunda entidad.</label>
+            <label><input type="checkbox" name="videojuego" value="listar" checked> Permite listar la segunda entidad.</label>
+            <label><input type="checkbox" name="videojuego" value="buscar" checked> Permite buscar la segunda entidad.</label>
+            <label><input type="checkbox" name="videojuego" value="eliminar" checked> Permite eliminar la segunda entidad.</label>
+
         </fieldset>
 
         <fieldset>
-            <legend>3. Gestión de Datos</legend>
-            <label><input type="checkbox" name="requisito"> Se pueden almacenar y recuperar datos de manera correcta.</label>
-            <label><input type="checkbox" name="requisito"> Se implementa validación para evitar datos incorrectos o incompletos.</label>
-            <label><input type="checkbox" name="requisito"> Las transacciones o cambios en datos se reflejan correctamente.</label>
+            <legend>3. Interfaces según Rol</legend>
+            <label><input type="checkbox" name="interfaces" value="admin" checked> Existe una interfaz específica para el rol administrador (por ejemplo, la tienda que vende juegos).</label>
+            <label><input type="checkbox" name="interfaces" value="cliente" checked> Existe una interfaz específica para el rol cliente (por ejemplo, quien compra juegos).</label>
         </fieldset>
 
         <fieldset>
-            <legend>4. Interacción con el Usuario</legend>
-            <label><input type="checkbox" name="requisito"> La interfaz permite una interacción clara y fluida.</label>
-            <label><input type="checkbox" name="requisito"> Se han implementado mensajes de confirmación o error según sea necesario.</label>
-            <label><input type="checkbox" name="requisito"> Se manejan correctamente los distintos roles o permisos.</label>
+            <legend>4. Gestión de Datos</legend>
+            <label><input type="checkbox" name="requisito" checked> Toda la información relevante se almacena en una estructura de datos en Java.</label>
+            <label><input type="checkbox" name="requisito" checked> Las transacciones (por ejemplo, compras entre cliente y tienda de juegos) se almacenan correctamente.</label>
+            <label><input type="checkbox" name="requisito" checked> Se implementa validación para evitar el ingreso de datos incorrectos o incompletos.</label>
         </fieldset>
 
         <fieldset>
-            <legend>5. Historial y Registro</legend>
-            <label><input type="checkbox" name="requisito"> Se mantiene un historial o registro de las acciones importantes.</label>
-            <label><input type="checkbox" name="requisito"> El usuario puede consultar información sobre eventos pasados.</label>
+            <legend>5. Interacción con el Usuario</legend>
+            <label><input type="checkbox" name="requisito" checked> Se muestran mensajes de confirmación claros (por ejemplo: “Su transacción se realizó satisfactoriamente”).</label>
         </fieldset>
 
         <fieldset>
-            <legend>6. Seguridad y Manejo de Errores</legend>
-            <label><input type="checkbox" name="requisito"> Se validan correctamente las credenciales al iniciar sesión.</label>
-            <label><input type="checkbox" name="requisito"> Se han considerado medidas de seguridad básicas para el manejo de datos.</label>
-            <label><input type="checkbox" name="requisito"> Se muestran mensajes adecuados cuando ocurre un error.</label>
+            <legend>6. Historial</legend>
+            <label><input type="checkbox" name="requisito" checked> El usuario puede consultar información sobre eventos pasados (por ejemplo, compras realizadas).</label>
         </fieldset>
 
         <fieldset>
-            <legend>7. Pruebas y Validación</legend>
-            <label><input type="checkbox" name="requisito"> Se han realizado pruebas funcionales para verificar el correcto desempeño.</label>
-            <label><input type="checkbox" name="requisito"> Se han corregido errores detectados durante las pruebas.</label>
-            <label><input type="checkbox" name="requisito"> Se ha recibido feedback y se han aplicado mejoras basadas en ello.</label>
+            <legend>7. Seguridad y Manejo de Errores</legend>
+            <label><input type="checkbox" name="requisito" checked> Se muestran mensajes adecuados cuando ocurre un error.</label>
         </fieldset>
 
         <button type="button" onclick="calcularNota()">Comprobar</button>
-        
         <div id="resultado"></div>
     </form>
 </body>
 <script src="assets/js/script.js"></script>
+
 </html>
